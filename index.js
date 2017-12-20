@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
 var spawn = require('child_process').spawn;
-var openalpr = require ("node-openalpr");
 
 //to download image
 var url = require('url');
@@ -44,9 +43,7 @@ app.get('/getVehicleNumber',function(req,response){
 		    	if(err){
 		    		console.log(err)
 		    	}
-		    	else{
-		    		console.log("deleted");
-		    	}
+		    	
 		    })
 		});
 		
@@ -61,9 +58,7 @@ app.get('/getVehicleNumber',function(req,response){
 			    	if(err){
 			    		console.log(err)
 			    	}
-			    	else{
-			    		console.log("deleted");
-			    	}
+			    	
 			    })
 			  	console.log('child process exited with ' + `code ${code} and signal ${signal}`);
 			}
