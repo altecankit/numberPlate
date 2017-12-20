@@ -12,7 +12,6 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
     "image-downloader": "^3.3.0",
-    "morgan": "^1.9.0",
-    "node-openalpr": "^1.1.1"
+    "morgan": "^1.9.0"
   }
 }
